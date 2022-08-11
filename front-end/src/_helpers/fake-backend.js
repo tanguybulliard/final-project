@@ -118,8 +118,9 @@ export function configureFakeBackend() {
                     setTimeout(() => {
                         alertService.info(`
                             <h4>Email Already Registered</h4>
-                            <p>Your email ${user.email} is already registered.</p>
+                            <p>Your emil ${user.email} is already registered.</p>
                             <p>If you don't know your password please visit the <a href="${location.origin}/account/forgot-password">forgot password</a> page.</p>
+                           
                         `, { autoClose: false });
                     }, 1000);
 
@@ -187,7 +188,7 @@ export function configureFakeBackend() {
                     const resetUrl = `${location.origin}/account/reset-password?token=${user.resetToken}`;
                     alertService.info(`
                         <h4>Reset Password Email</h4>
-                        <p>Please click the below link to reset your password:</p>
+                        <p>Please click the below link to reset your password, the link will be valid for 1 day:</p>
                         <p><a href="${resetUrl}">${resetUrl}</a></p>
                     `, { autoClose: false });
                 }, 1000);

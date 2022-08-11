@@ -33,7 +33,6 @@ function login(email, password) {
             return user;
         });
 }
-
 function logout() {
     // revoke token, stop refresh timer, publish null to user subscribers and redirect to login page
     fetchWrapper.post(`${baseUrl}/revoke-token`, {});

@@ -57,6 +57,7 @@ function Login({ history, location }) {
                             </div>
                             <div className="form-group col text-right">
                                 <Link to="forgot-password" className="btn btn-link pr-0">Forgot Password?</Link>
+                                <Link to="login-doctor" className="btn btn-link pr-0">I am a doctor</Link>
                             </div>
                         </div>
                     </div>
